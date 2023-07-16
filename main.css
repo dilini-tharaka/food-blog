@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.home{
+    background-image: url(img/home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.home-layer{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.home-container{
+    position: relative;
+    /* z-index: 1; */
+}
+
+.header-container{
+    width: 100%;
+    height: 230px;
+   
+}
+.head {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 12, 2);
+    position: fixed;
+    z-index: 10;
+}
+.home-container .topic{
+    padding: 10px;
+}
+
+.home-container .bio{
+    padding: 10px;
+}
+
+.home-container .date{
+    padding: 10px;
+}
+
+.topic h1{
+    font-family: 'Lunasima', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bio h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.date h3{
+    font-family: 'Lumanosimo', cursive;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(46, 83, 121);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lunasima', sans-serif;
+    border-radius: 6px;
+    transition: all .5s ease-in-out; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav li:hover{
+    background-color: rgb(170, 222, 243);
+    transform: scale(1.1);
+}
+
+.nav a:hover{
+    color: rgb(19, 1, 1);
+}
+
+.img-gallery{
+    width: 100%;
+    height: 420px;
+     /* background-color: seagreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-gallery .img-container{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container .action-button {
+    height: 100%;
+    width: 50px;
+    background-color: rgb(12, 11, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action-button img{
+    width: 100%;
+}
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* style for posts */
+
+.post{
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px;
+}
+
+.post .artical-container{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 12, 2);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.post .img-box {
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+.post .img-box img {
+    width: 100%;
+}
+
+.post .content-box{
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post .header h1{
+    font-family: 'Lunasima', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    /* text-align: center; */
+    padding-top: 10px;
+    color: white;
+}
+
+.post .header p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: white;
+}
+
+.post .header span{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.post .content {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+#dontwaste{
+    width: 20%;
+    position: relative;
+    margin-top: 30px;
+    /* height:100px; */
+}
+
+.video-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-box{
+    width: 50%;
+    position: relative;
+}
+
+.video-box video{
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover; */
+}
+
+.about-container{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    /* background-color: rosybrown; */
+}
+
+.about-container .about-box{
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(0, 12, 2); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.about-container .about-img{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(0, 12, 2); */
+}
+
+.about-container .about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    animation: about-img;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes about-img {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.04);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.about-container .about-content{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(14, 13, 29);
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.about-container .about-content h1{
+    font-family: 'Lunasima', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    /* text-align: center; */
+    padding: 10px 0 20px;
+    color: white; 
+}
+
+.about-container .about-content p{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: white;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    /* background-color: rosybrown; */
+}
+
+.contact-container .contact-box{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0, 12, 2); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+}
+
+.contact-container .contact-content{
+    width: 50%;
+    height: 100%;
+    background-color: #2e2e2e;
+    color: black;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contact-img{
+    width: 50%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.contact-container .contact-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.contact-container .contact-content h1{
+    font-family: 'Lunasima', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0 20px 10px;
+    color: white; 
+}
+
+.contact-container .contact-content input, 
+.contact-container .contact-content textarea{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline:none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-smedia-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-smedia-box i{
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    margin: 0 10px 0 30px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-smedia-box i:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+#btn-send{
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(46, 83, 121);
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Lunasima', sans-serif;
+    border-radius: 6px;
+    transition: all .5s ease-in-out; 
+    /* margin: 30px 0 0 100px; */
+    cursor: pointer;
+}
+
+#btn-send:hover{
+    background-color: rgb(170, 222, 243);
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px wheat;
+}
+
+.row {
+    display: flex;
+}
+
+.col-12 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.col-6 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.col-12 p,
+.col-6 p {
+    font-size: 14px;
+    margin-left: 20px;
+    color: red;
+    display: none;
+}
+

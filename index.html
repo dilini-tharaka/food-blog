@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainable Secure Food</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- home page start -->
+    <div class="section home">
+      <div class="home-layer"></div>
+
+      <div class="section home-container">
+        <div class="header-container">
+          <header class="head">
+            <div class="topic">
+              <h1>Sustainable Secure Food Blog</h1>
+            </div>
+            <div class="bio">
+              <h2>GROWING FOOD FOR ALL, SUSTAINABLE FOR OUR EARTH.</h2>
+            </div>
+            <div class="date">
+              <h3>SUNDAY, JULY 16TH, 2023</h3>
+            </div>
+            <div class="nav">
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#video">ABOUT</a></li>
+                <li><a href="#contac">CONTACT</a></li>
+              </ul>
+            </div>
+          </header>
+        </div>
+
+        <div class="img-gallery">
+          <div class="img-container">
+            <div class="action-button left" onclick="moveLeft();">
+              <img src="img/leftarrow.png" alt="" />
+            </div>
+            <div class="slider-image">
+              <img id="carousel" src="./img/carousel-1.jpg" alt="" />
+            </div>
+            <div class="action-button right" onclick="moveRight();">
+              <img src="img/rightarrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- home page end -->
+
+      <!-- blog page start -->
+      <div class="section post">
+        <div
+          class="artical-container"
+          onclick="navigate('https://sustainable-secure-food-blog.com/2023/06/22/why-should-i-buy-inoculated-seeds-for-my-garden/')"
+        >
+          <div class="img-box">
+            <img src="img/blog-1.jpg" alt="food" />
+          </div>
+          <div class="content-box">
+            <div class="header">
+              <h1>Why should I buy inoculated seeds for my garden?</h1>
+              <p>ON JUNE 22, 2023 - <span>8 MIN</span></p>
+            </div>
+            <div class="content">
+              <p>
+                Do you grow peas, beans or other legumes in your backyard or
+                garden? Have you ever heard about seed inoculation and how you
+                can use it to produce more yield? Let’s learn about this and get
+                the most out of your plants.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="artical-container"
+          onclick="navigate('https://sustainable-secure-food-blog.com/2022/09/22/wild-about-peanuts-using-crop-wild-relatives-to-improve-todays-crops/')"
+        >
+          <div class="img-box">
+            <img src="img/blog-2.jpg" alt="food" />
+          </div>
+          <div class="content-box">
+            <div class="header">
+              <h1>
+                Wild about peanuts – using crop wild relatives to improve
+                today’s crops
+              </h1>
+              <p>ON SEPTEMBER 22, 2022 - <span>10 MIN</span></p>
+            </div>
+            <div class="content">
+              <p>
+                However you eat your peanuts – shelled, salted, or in a favorite
+                mix – they are a snack item enjoyed by many. They are also a
+                main ingredient in many favorite dishes, especially for vegans
+                and vegetarians, as they contain protein.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="artical-container"
+          onclick="navigate('https://sustainable-secure-food-blog.com/2022/09/07/how-do-nutrients-in-leaves-inform-farming-practices/')"
+        >
+          <div class="img-box">
+            <img src="img/blog-3.png" alt="food" />
+          </div>
+          <div class="content-box">
+            <div class="header">
+              <h1>How do nutrients in leaves inform farming practices?</h1>
+              <p>ON May 22, 2023 - <span>6 MIN</span></p>
+            </div>
+            <div class="content">
+              <p>
+                Last fall, I spent hours washing leaves as I would wash my hands
+                – first, I dunked them in soapy water and wiped off any
+                residues. Then I rinsed the leaves with distilled water until
+                there were no more hints of soapiness.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="img/dontwaste.jpg" alt="" id="dontwaste" />
+      </div>
+      <!-- blog page end  -->
+      <div class="video-container">
+        <div class="video-box" id="video"><video src="video.mp4" controls></video></div>
+      </div>
+
+      <!-- About us page start -->
+      <div class="about-container" id="about">
+        <div class="about-box">
+          <div class="about-img">
+            <img src="img/logo.png" alt="" id="logo" />
+          </div>
+          <div class="about-content">
+            <h1>ABOUT US</h1>
+            <p>
+              Welcome to our blog about sustainable food production and food
+              security!We are a group of students from the University of Guelph
+              who have a passion for sustainable agriculture. We are currently
+              working on a project to help farmers in developing countries grow
+              more food with less resources. We are also working on creating a
+              blog to share our knowledge and experience with others.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- About us page end -->
+      <!-- Contact us page start -->
+      <div class="contact-container" id="contac">
+        <div class="contact-box">
+          <div class="contact-content">
+            <h1>Contact US</h1>
+            <div class="row">
+              <div class="col-6">
+                <input type="text" placeholder="Name" id="name" />
+                <p id="error-name">Please Enter A Value For Name</p>
+              </div>
+              <div class="col-6">
+                <input type="text" placeholder="Email" id="email" />
+                <p id="error-email">Please Enter A Valid Email Address</p>
+              </div>
+            </div>
+            <div class="col-12">
+              <input type="text" placeholder="Mobile" id="mobile" />
+              <p id="error-mobile">Please Enter A Valid Mobile Number</p>
+            </div>
+            <div class="col-12">
+              <textarea id="message" placeholder="Message"></textarea>
+              <p id="error-message">Please Enter A Value For Message</p>
+            </div>
+
+            <div class="btn-smedia-box">
+              <input
+                type="button"
+                id="btn-send"
+                value="Send"
+                onclick="sendMessage()"
+              />
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+            </div>
+          </div>
+          <div class="contact-img">
+            <img src="img/contactus.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
