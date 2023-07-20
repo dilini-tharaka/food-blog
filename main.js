@@ -75,21 +75,23 @@ var worker;
 
 function moveObject() {
     worker = setInterval(function(){
-        if(margin > 1000) {
+        if(margin > (window.innerWidth - dontwaste.clientWidth - 50)) {
             clearInterval(worker);
         }
         img.style.marginLeft = margin + "px";
         margin += 1;
-    }, 1);
+    }, 2);
 }
 
 window.addEventListener("scroll", function() {
-    if(window.scrollY > 1000) {
+    if(window.scrollY > 1200) {
         if(worker == null) {
             moveObject();
         }
     } 
 });
+
+
 
 const carousel = document.getElementById("carousel");
 const images = [
